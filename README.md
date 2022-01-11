@@ -1,3 +1,5 @@
-# mackerel-terraform-dev
+# mackerel-terraform
 
-mackerelをterraformで管理してみる
+- MackerelをTerraformで管理する
+  - terraform-cloud
+  - terraform v1.0.11
