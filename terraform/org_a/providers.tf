@@ -14,3 +14,14 @@ terraform {
     }
   }
 }
+
+data "terraform_remote_state" "aws" {
+  backend = "remote"
+
+  config = {
+    organization = "my-org"
+    workspaces = {
+      name = "mackerel-aws"
+    }
+  }
+}
