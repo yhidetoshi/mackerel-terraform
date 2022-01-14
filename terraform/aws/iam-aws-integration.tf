@@ -30,6 +30,7 @@ data "aws_iam_policy_document" "mackerel_integration" {
     actions = [
       "lambda:GetFunctionConfiguration",
       "lambda:List*",
+      "budgets:ViewBudget",
       "cloudwatch:Get*",
       "cloudwatch:List*",
       "s3:ListAllMyBuckets",
