@@ -13,6 +13,7 @@ resource "mackerel_channel" "slack" {
   slack {
     url                 = "https://hooks.slack.com/services/xxx/yyy/zzz"
     enabled_graph_image = true
+    events              = ["alert", "alertGroup"]
     mentions = {
       critical = "@here"
     }
